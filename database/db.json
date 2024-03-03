@@ -3,12 +3,14 @@
     {
       "id": "4",
       "title": "Web Developer",
-      "detail": "Senior"
+      "detail": "Senior",
+      "complete": false
     },
     {
       "id": "5",
-      "title": "Web Developer",
-      "detail": "Senior"
+      "title": "Web Designer",
+      "detail": "Junior",
+      "complete": true
     }
   ]
 }

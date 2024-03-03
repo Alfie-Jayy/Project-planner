@@ -5,7 +5,10 @@
 
 @layer components {
     .singleProject {
-      @apply bg-gray-50 p-10 m-10 rounded-2xl flex justify-between text-lg border-s-8 shadow-sm border-cyan-500 ;
+      @apply bg-gray-50 p-10 m-10 rounded-2xl flex justify-between text-lg border-s-8 shadow-sm border-orange-600 ;
+    }
+    .complete{
+      @apply border-green-600;
     }
     .home{
         @apply container mx-auto max-w-[600px] ;
