@@ -1,0 +1,16 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .singleProject {
+      @apply bg-gray-50 p-10 m-10 rounded-2xl flex justify-between text-lg border-s-8 shadow-sm border-cyan-500 ;
+    }
+    .home{
+        @apply container mx-auto max-w-[600px] ;
+    }
+    .single-icon{
+      @apply text-gray-600 hover:text-gray-950 text-xl cursor-pointer;
+    }
+  }
