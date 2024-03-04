@@ -13,7 +13,9 @@
     </div>
     <div class="space-x-5">
       <i class="fa-solid fa-trash single-icon" @click="deleteProject"></i>
-      <i class="fa-solid fa-pen single-icon"></i>
+      <router-link :to="{name:'editProject', params: {id: project.id} }">
+        <i class="fa-solid fa-pen single-icon"></i>
+      </router-link>
       <i class="fa-solid fa-check single-icon" @click="completeProject"></i>
     </div>
   </div>
@@ -65,15 +67,11 @@ export default {
 
     //     const updateRoute = this.api + this.project.id;
 
-    //     const headers = {
-    //         "Content-Type": "application/json",
-    //     };
-
     //     const body = {
     //         complete: !this.project.complete,
     //     };
 
-    //     axios.patch(updateRoute, body, {headers})
+    //     axios.patch(updateRoute, body)
 
     //     .then((response) => {
     //         this.$emit("update", this.project.id);

@@ -2,21 +2,21 @@
   "projects": [
     {
       "id": "5",
-      "title": "Web Designer",
-      "detail": "Junior",
+      "title": "Web Design",
+      "detail": "Use Tailwind",
       "complete": true
     },
     {
       "id": "2591",
       "title": "Portfolio",
-      "detail": "my portfolio",
+      "detail": "my portfolio website",
       "complete": false
     },
     {
       "id": "c9af",
       "title": "Business",
       "detail": "My Business Website",
-      "complete": true
+      "complete": false
     }
   ]
 }
