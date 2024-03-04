@@ -3,13 +3,13 @@
         
         <form @submit.prevent="AddProject" >        
                 <div>
-                    <label class="label" for="">Project title</label>
+                    <label class="label" >Project title</label>
                     <input class="input" type="text" v-model="title" >
                     <span v-if="titleError" class="titleError" >Project title field is required!</span>
                 </div>
 
                 <div>
-                    <label class="label" for="">Project detail</label>
+                    <label class="label" >Project detail</label>
                     <input class="input" type="text" v-model="detail" >
                     <span v-if="detailError" class="detailError">Project detail field is required!</span>
                 </div>

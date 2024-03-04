@@ -1,22 +1,29 @@
 <template>
   <div class="main">    
+    
+    <FilterNav @FilterValue="current=$event" :current="current" ></FilterNav>
+
     <div v-for="project in projects" :key="project.id">
       <SingleProject :project="project" @delete="deleteProject" @complete="completeProject" ></SingleProject>
-    </div>  
+    </div>
+
   </div>
 </template>
 
 <script>
 
+import FilterNav from '../components/FilterNav'
 import SingleProject from '../components/SingleProject'
 import axios from "axios";
 export default {
   name: 'HomeView',
   components: {
+    FilterNav,
     SingleProject,},
   data() {
     return {
-      projects: []
+      projects: [],
+      current: "all"
     }
   },
 

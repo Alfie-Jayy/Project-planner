@@ -39,5 +39,15 @@
     .detailError{
       @apply text-red-600 font-medium
     }
+    .filterNav{
+      @apply px-10 py-5 space-x-4
+    }
+    .filterNav button{
+      @apply font-medium text-slate-600 
+    }
+    .active{
+      @apply border-b-4 border-green-500 pb-1 transition duration-500
+    }
+
 
   }
